@@ -1,0 +1,25 @@
+{
+  "name": "Reply to Friends",
+  "version": "0",
+  "description":
+    "Alerts to remind you to message people.",
+  "permissions": [
+		"tabs",
+		"activeTab",
+		"notifications",
+		"*://*.messenger.com/*"
+	],
+  "background": {
+    "scripts": ["background.js", "jquery-2.1.1.min.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.messenger.com/*"],
+      "js": ["jquery-2.1.1.min.js"]
+    }
+  ],
+  "browser_action": {
+		"default_title": "Reply to Friends"
+	},
+  "manifest_version": 2
+}
