@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Reply Reminder</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="options.js"></script>
+  </head>
+  <body>
+    <h1>
+      Reply Reminder
+    </h1>
+    <h2>Options</h2>
+    <form id="options">
+		<div id="namesContainer">
+			Names of friends/groups you want to be reminded about replying (one per line).
+			<br>
+			<textarea name="names" cols="60" rows="9"></textarea>
+		</div>
+		<div id="frequencyContainer">
+			Frequency of notifications.
+			
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			- Every
+			<select name="frequency">
+				<option>5</option>
+				<option>10</option>
+				<option selected="selected">15</option>
+				<option>30</option>
+				<option>45</option>
+				<option>60</option>
+			</select>
+			seconds.
+		</div>
+    </form>
+  </body>
+</html>
